@@ -43,34 +43,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     *               └───┴───┘   └───┴───┘
     */
 	[_QWERTY] = LAYOUT_ferris_wrapper(
-        _________QWERTY_L1_________, _________QWERTY_R1_________,
-        _________QWERTY_L2_________, _________QWERTY_R2_________,
-        _________QWERTY_L3_________, _________QWERTY_R3_________,
-                      ___BASE_LT___, ___BASE_RT___
-    ),
+		_________QWERTY_L1_________, _________QWERTY_R1_________,
+		_________QWERTY_L2_________, _________QWERTY_R2_________,
+		_________QWERTY_L3_________, _________QWERTY_R3_________,
+		___BASE_LT___,               ___BASE_RT___
+	),
 	[_COLEMAK_DH] = LAYOUT_ferris_wrapper(
-        _______COLEMAK_DH_L1_______, _______COLEMAK_DH_R1_______,
-        _______COLEMAK_DH_L2_______, _______COLEMAK_DH_R2_______,
-        _______COLEMAK_DH_L3_______, _______COLEMAK_DH_R3_______,
-                      ___BASE_LT___, ___BASE_RT___
-    ),
+		_______COLEMAK_DH_L1_______, _______COLEMAK_DH_R1_______,
+		_______COLEMAK_DH_L2_______, _______COLEMAK_DH_R2_______,
+		_______COLEMAK_DH_L3_______, _______COLEMAK_DH_R3_______,
+		___BASE_LT___,               ___BASE_RT___
+	),
     [_ARROWS] = LAYOUT(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    QK_BOOT, KC_NO,   KC_NO, KC_NO,   KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,
-                             KC_NO, KC_NO,    KC_NO,   KC_NO
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, QK_BOOT, KC_NO,   KC_NO, KC_NO,   KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,
+                             KC_NO, KC_NO, KC_NO,   KC_NO
     ),
     [_NUMBERS] = LAYOUT(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,  KC_1, KC_2, KC_3, KC_MINUS,
-        CMD_T(KC_NO), ALT_T(KC_NO), SFT_T(KC_NO), CTL_T(KC_NO), ALGR_T(KC_NO), KC_NO,  KC_4, KC_5, KC_6, KC_0,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,  KC_7, KC_8, KC_9, KC_0,
-                             KC_NO, KC_NO, KC_NO, KC_NO
+        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,         KC_NO, KC_1, KC_2, KC_3, KC_MINUS,
+        CMD_T(KC_NO), ALT_T(KC_NO), SFT_T(KC_NO), CTL_T(KC_NO), ALGR_T(KC_NO), KC_NO, KC_4, KC_5, KC_6, KC_0,
+        KC_NO,        KC_NO,        KC_NO,        KC_NO,        KC_NO,         KC_NO, KC_7, KC_8, KC_9, KC_0,
+                                                  KC_NO,        KC_NO,         KC_NO, KC_NO
     ),
     [_SYMBOLS] = LAYOUT(
-        KC_1,   KC_2,  KC_3,  KC_4,  KC_5,  KC_6,  KC_7,  KC_8,  KC_9,  KC_0,
+        KC_1,          KC_2,          KC_3,          KC_4,          KC_5,          KC_6,             KC_7,            KC_8,            KC_9,          KC_0,
         LGUI_T(KC_NO), LALT_T(KC_NO), LSFT_T(KC_NO), LCTL_T(KC_NO), RALT_T(KC_NO), RALT_T(KC_MINUS), RCTL_T(KC_LBRC), RSFT_T(KC_RBRC), LALT_T(KC_NO), RGUI_T(KC_NO),
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                             KC_NO, KC_NO, KC_NO, KC_NO
+        KC_NO,         KC_NO,         KC_NO,         KC_NO,         KC_NO,         KC_NO,            KC_NO,           KC_NO,           KC_NO,         KC_NO,
+                                                     KC_NO,         KC_NO,         KC_NO,            KC_NO
     ),
 };
 // clang-format on

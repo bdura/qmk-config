@@ -34,10 +34,28 @@
         "type": "github"
       }
     },
+    "qmkfmt-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1742470119,
+        "narHash": "sha256-QWyMH93a07/0CJ5CENiwVB4C4w1agowW+esW9Wx5vJk=",
+        "owner": "rcorre",
+        "repo": "qmkfmt",
+        "rev": "caf37d554841fb550cf38368850b3bc4a9836290",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rcorre",
+        "ref": "v0.2.0",
+        "repo": "qmkfmt",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "qmkfmt-src": "qmkfmt-src"
       }
     },
     "systems": {
