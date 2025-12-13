@@ -7,7 +7,7 @@ A repo to keep track of my QMK configuration, using [QMK userspace].
 Until I [package the firmware within the flake][qmk-flake]:
 
 ```shell
-qmk setup --home $XDG_DATA_HOME/qmk_firmware/
+qmk setup --home ./.firmware/
 ```
 
 [QMK userspace]: https://docs.qmk.fm/newbs_external_userspace
