@@ -25,7 +25,7 @@ enum layers {
 #define _________QWERTY_R3_________     KC_N,         KC_M,         KC_COMM,      KC_DOT,           KC_SLSH
 
 #define ___BASE_LT___     LT(_SYMBOLS,KC_ESC), LT(_NUMBERS,KC_ENT)
-#define ___BASE_RT___     KC_SPC,              LT(_SYMBOLS,KC_BSPC)
+#define ___BASE_RT___     MEH_T(KC_SPC),         LT(_SYMBOLS,KC_BSPC)
 
 #define LAYOUT_ferris_wrapper(...)   LAYOUT(__VA_ARGS__)
 
